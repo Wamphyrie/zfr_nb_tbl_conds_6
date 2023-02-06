@@ -17,9 +17,26 @@ sap.ui.define([
 				return parseFloat(sValue).toFixed(2);
 			},
 	
-			BUTTONCOLORREF : function (Salary)
+			BUTTONCOLORFF : function (Salary)
 			{
-				return (Salary > 80000) ? "Accept" : "Reject" ;
+				return (Salary > 80000) ? "Accept" : "Reject";
+			},
+			
+			SALCOLRFF : function (Salary)
+			{
+				return  (Salary > 80000) ? "Success" : "Error";
+			},
+			
+			STATUSFF : function (Salary)
+			{
+				if (Salary > 80000)
+				{
+					return "Exp Worker";
+				}
+				else
+				{
+					return "Fresher Wroker";
+				}
 			}
 
 		};

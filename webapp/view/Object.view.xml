@@ -45,20 +45,22 @@
 					</Column>
 					
 					<Column>
-						<Label text = "Phone"  design = "Bold"  />						
-					</Column>					
+						<Label text="Status"  design="Bold" />
+					</Column>				
+					
 				</columns>
 				
 				<items>
 					<ColumnListItem>
 						<cells>
-							<Button  text = "{Userid}"  type = "{ path:'Salary', formatter: '.formatter.BUTTONCOLORREF'}" />
-							<Text  text = "{Firstname}"  />
+							<Button  text = "{Userid}"  type = "{path:'Salary', formatter:'.formatter.BUTTONCOLORFF'}" />
+							<Input  value = "{Firstname}" width = "50px"  />
 							<Text  text = "{Lastname}" />
-							<Text  text = "{Emailid}"  />
-							<Text  text = "{Coountry}" />
-							<Text  text = "{Salary}" />
-							<Text  text = "{Phone}" />
+							<Link  text = "{Emailid}"  />
+							<Text  text = "{Country}" />
+							<ObjectNumber  number = "{Salary}"  state = "{path:'Salary', formatter:'.formatter.SALCOLRFF'}"	/>
+							<Text  width = "75px"  text = "{path:'Salary', formatter:'.formatter.STATUSFF'}" />
+
 						</cells>
 					</ColumnListItem>
 				</items>	
