@@ -48,6 +48,11 @@
 						<Label text="Status"  design="Bold" />
 					</Column>				
 					
+					<Column>
+						<Label text="IMG"	  design="Bold" />
+					</Column>
+					
+					
 				</columns>
 				
 				<items>
@@ -60,7 +65,7 @@
 							<Text  text = "{Country}" />
 							<ObjectNumber  number = "{Salary}"  state = "{path:'Salary', formatter:'.formatter.SALCOLRFF'}"	/>
 							<Text  width = "75px"  text = "{path:'Salary', formatter:'.formatter.STATUSFF'}" />
-
+							<Image	src = "{path:'Salary', formatter:'.formatter.IMAGEFF'}"  />
 						</cells>
 					</ColumnListItem>
 				</items>	

@@ -37,6 +37,11 @@ sap.ui.define([
 				{
 					return "Fresher Wroker";
 				}
+			},
+			
+			IMAGEFF : function (Salary)
+			{
+				return (Salary > 80000) ? "/purple.JPG" : "ornage.JPG";
 			}
 
 		};
