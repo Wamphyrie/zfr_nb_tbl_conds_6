@@ -41,7 +41,7 @@ sap.ui.define([
 			
 			IMAGEFF : function (Salary)
 			{
-				return (Salary > 80000) ? "/purple.JPG" : "ornage.JPG";
+				return (Salary > 80000) ? "/purple.JPG" : "/orange.JPG";
 			}
 
 		};
