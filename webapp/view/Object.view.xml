@@ -1,6 +1,10 @@
 <mvc:View
 	controllerName="phoenix.controller.Object"
 	xmlns="sap.m"
+	xmlns:core = "sap.ui.core"
+	xmlns:layout = "sap.ui.layout"
+	xmlns:form = "sap.ui.form"
+	xmlns:unified = "sap.ui.unified"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:semantic="sap.m.semantic"
 	xmlns:footerbar="sap.ushell.ui.footerbar">
@@ -14,7 +18,54 @@
 		busyIndicatorDelay="{objectView>/delay}">
 
 		<semantic:content>
-			<ObjectHeader
+			<Table  items = "{/WorkerSet}"  fixedLayout = "false"  growing = "true" growingThreshold = "15" >
+				<columns>
+					<Column>
+						<Label text = "UserId" design = "Bold" />
+					</Column>
+					
+					<Column>
+						<Label text = "First Name" design = "Bold" />
+					</Column>
+					
+					<Column>	
+						<Label text = "Last Name"  design = "Bold"  />
+					</Column>
+					
+					<Column>
+						<Label text = "Email Id"  design = "Bold"  />
+					</Column>
+					
+					<Column>
+						<Label text = "Country"  design = "Bold"  />
+					</Column>
+					
+					<Column>
+						<Label text = "Salary"  design = "Bold"  />						
+					</Column>
+					
+					<Column>
+						<Label text = "Phone"  design = "Bold"  />						
+					</Column>					
+				</columns>
+				
+				<items>
+					<ColumnListItem>
+						<cells>
+							<Button  text = "{Userid}"  type = "{ path:'Salary', formatter: '.formatter.BUTTONCOLORREF'}" />
+							<Text  text = "{Firstname}"  />
+							<Text  text = "{Lastname}" />
+							<Text  text = "{Emailid}"  />
+							<Text  text = "{Coountry}" />
+							<Text  text = "{Salary}" />
+							<Text  text = "{Phone}" />
+						</cells>
+					</ColumnListItem>
+				</items>	
+			</Table>
+			
+			
+<!--			<ObjectHeader
 				id="objectHeader"
 				title="{Firstname}"
 				number="{
@@ -22,7 +73,7 @@
 							formatter: '.formatter.numberUnit'
 				}"
 				numberUnit="{Country}">
-			</ObjectHeader>
+			</ObjectHeader>-->
  		</semantic:content>
 
 		<semantic:sendEmailAction>

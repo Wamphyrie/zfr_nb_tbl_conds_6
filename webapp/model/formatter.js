@@ -15,6 +15,11 @@ sap.ui.define([
 					return "";
 				}
 				return parseFloat(sValue).toFixed(2);
+			},
+	
+			BUTTONCOLORREF : function (Salary)
+			{
+				return (Salary > 80000) ? "Accept" : "Reject" ;
 			}
 
 		};
