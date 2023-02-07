@@ -42,6 +42,47 @@ sap.ui.define([
 			IMAGEFF : function (Salary)
 			{
 				return (Salary > 80000) ? "/purple.JPG" : "/orange.JPG";
+			},
+			
+			CHKBOXFF : function (Salary)
+			{
+				return (Salary > 80000) ? true : false;
+			},
+			
+			SWITCHFF : function (Salary)
+			{
+				return (Salary > 80000) ? true : false;
+			},
+			
+			RTNGINDFF : function (Salary)
+			{
+				return (Salary > 80000) ? 4 : 2;
+			},
+			
+			PROGINDFF : function (Salary)
+			{
+				return (Salary > 80000) ? 80 : 40;
+			},
+			
+			SLIDERFF : function (Salary) 
+			{
+				return (Salary > 80000) ? 80 : 40;
+			},
+			
+			CURRFF : function (Country)
+			{
+				switch(Country)
+				{
+					case "INDIA" : return "IND";
+					case "US"	 : return "USD";
+					case "UK"	 : return "UKP";
+					default 	 : return "N/A";
+				}
+			},
+			
+			ANNUALFF : function (Salary)
+			{
+				return (Salary * 12);	
 			}
 
 		};

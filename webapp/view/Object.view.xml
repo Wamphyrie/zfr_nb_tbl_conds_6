@@ -51,7 +51,34 @@
 					<Column>
 						<Label text="IMG"	  design="Bold" />
 					</Column>
+
+					<Column>
+						<Label text="CB"	  design="Bold" />
+					</Column>
 					
+					<Column>
+						<Label text="Switch"  design="Bold" />
+					</Column>
+					
+					<Column>
+						<Label text="RtngInd" design ="Bold" />
+					</Column>
+					
+					<Column>
+						<Label text="Progress"  design="Bold" />
+					</Column>
+					
+					<Column>
+						<Label text="Slider"  design="Bold" />
+					</Column>					
+					
+					<Column>
+						<Label text="Currency"  design="Bold" />
+					</Column>					
+					
+					<Column>
+						<Label text="Annual"  design="Bold" />
+					</Column>										
 					
 				</columns>
 				
@@ -66,6 +93,13 @@
 							<ObjectNumber  number = "{Salary}"  state = "{path:'Salary', formatter:'.formatter.SALCOLRFF'}"	/>
 							<Text  width = "75px"  text = "{path:'Salary', formatter:'.formatter.STATUSFF'}" />
 							<Image	src = "{path:'Salary', formatter:'.formatter.IMAGEFF'}"  />
+							<CheckBox  selected = "{path:'Salary', formatter:'.formatter.CHKBOXFF'}" />
+							<Switch  state = "{path:'Salary', formatter:'.formatter.SWITCHFF'}"  />
+							<RatingIndicator  value = "{path:'Salary', formatter:'.formatter.RTNGINDFF'}" />
+							<ProgressIndicator  percentValue = "{path:'Salary', formatter:'.formatter.PROGINDFF'}" />
+							<Slider  width = "90px"  value = "{path:'Salary',formatter:'.formatter.SLIDERFF'}" />
+							<Text	text = "{path:'Country', formatter:'.formatter.CURRFF'}"  />
+							<Text   text = "{path:'Salary', formatter:'.formatter.ANNUALFF'}" />
 						</cells>
 					</ColumnListItem>
 				</items>	
